@@ -4,10 +4,10 @@
 
 <script>
 export default {
-  name: 'content-placeholders-img',
+  name: 'v-shimmer-img',
   data () {
     return {
-      className: 'vue-content-placeholders-img',
+      className: 'vue-v-shimmer-img',
     }
   },
 }

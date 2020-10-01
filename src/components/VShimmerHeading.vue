@@ -1,3 +1,4 @@
+.
 <template>
   <div :class="className">
     <div v-if="img" :class="`${className}__img`" />
@@ -10,10 +11,10 @@
 
 <script>
 export default {
-  name: 'content-placeholders-heading',
+  name: 'v-shimmer-heading',
   data () {
     return {
-      className: 'vue-content-placeholders-heading',
+      className: 'vue-v-shimmer-heading',
     }
   },
   props: {

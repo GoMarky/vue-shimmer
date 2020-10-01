@@ -6,10 +6,10 @@
 
 <script>
 export default {
-  name: 'content-placeholders-text',
+  name: 'v-shimmer-text',
   data () {
     return {
-      className: 'vue-content-placeholders-text',
+      className: 'vue-v-shimmer-text',
     }
   },
   props: {

@@ -1,20 +1,23 @@
-import ContentPlaceholders from './components/ContentPlaceholders.vue'
-import ContentPlaceholdersHeading from './components/ContentPlaceholdersHeading.vue'
-import ContentPlaceholdersImg from './components/ContentPlaceholdersImg.vue'
-import ContentPlaceholdersText from './components/ContentPlaceholdersText.vue'
+import VShimmerRoot from './components/VShimmerRoot.vue'
+import VShimmerHeading from './components/VShimmerHeading.vue'
+import VShimmerImage from './components/VShimmerImage.vue'
+import VShimmerMultiline from './components/VShimmerMultiline.vue'
+import VShimmerBlock from './components/VShimmerBlock.vue'
 
 export function install (Vue) {
-  Vue.component('ContentPlaceholders', ContentPlaceholders)
-  Vue.component('ContentPlaceholdersHeading', ContentPlaceholdersHeading)
-  Vue.component('ContentPlaceholdersImg', ContentPlaceholdersImg)
-  Vue.component('ContentPlaceholdersText', ContentPlaceholdersText)
+  Vue.component('VShimmerRoot', VShimmerRoot)
+  Vue.component('VShimmerHeading', VShimmerHeading)
+  Vue.component('VShimmerImage', VShimmerImage)
+  Vue.component('VShimmerMultiline', VShimmerMultiline)
+  Vue.component('VShimmerBlock', VShimmerBlock)
 }
 
 export {
-  ContentPlaceholders,
-  ContentPlaceholdersHeading,
-  ContentPlaceholdersImg,
-  ContentPlaceholdersText,
+  VShimmerRoot,
+  VShimmerHeading,
+  VShimmerImage,
+  VShimmerMultiline,
+  VShimmerBlock
 }
 
 const plugin = {

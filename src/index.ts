@@ -1,12 +1,4 @@
-import Vue from 'vue';
-import { PluginFunction, VueConstructor } from 'vue';
-
-
-declare global {
-  interface Window {
-    Vue?: VueConstructor<Vue>
-  }
-}
+import { PluginFunction } from 'vue/types/umd';
 
 export default {
   install() {}

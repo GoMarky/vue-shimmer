@@ -6,14 +6,14 @@
 
 <script>
 export default {
-  name: 'content-placeholders',
+  name: 'v-shimmer',
   computed: {
     classObject () {
       return {
-        'vue-content-placeholders': true,
-        'vue-content-placeholders-is-rounded': this.rounded,
-        'vue-content-placeholders-is-centered': this.centered,
-        'vue-content-placeholders-is-animated': this.animated,
+        'vue-v-shimmer': true,
+        'vue-v-shimmer-is-rounded': this.rounded,
+        'vue-v-shimmer-is-centered': this.centered,
+        'vue-v-shimmer-is-animated': this.animated,
       }
     },
   },
