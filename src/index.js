@@ -14,7 +14,7 @@ export {
   VShimmerRoot,
   VShimmerImage,
   VShimmerLine,
-  VShimmerBlock
+  VShimmerBlock,
 }
 
 const plugin = {

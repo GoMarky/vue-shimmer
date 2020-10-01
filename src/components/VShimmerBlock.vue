@@ -26,13 +26,13 @@ export default {
     size: {
       type: String,
       default: 'small',
-      validator: val => VALID_BLOCK_SIZES.includes(val)
+      validator: (val) => VALID_BLOCK_SIZES.includes(val),
     },
   },
   computed: {
-    isSmall() {
-      return this.size === 'small';
-    }
-  }
+    isSmall () {
+      return this.size === 'small'
+    },
+  },
 }
 </script>

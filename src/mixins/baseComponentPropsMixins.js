@@ -15,6 +15,6 @@ export default {
     },
     offsetBottom: {
       type: [Number, String],
-    }
-  }
+    },
+  },
 }
