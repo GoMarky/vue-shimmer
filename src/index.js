@@ -1,22 +1,19 @@
 import VShimmerRoot from './components/VShimmerRoot.vue'
-import VShimmerHeading from './components/VShimmerHeading.vue'
 import VShimmerImage from './components/VShimmerImage.vue'
-import VShimmerMultiline from './components/VShimmerMultiline.vue'
+import VShimmerLine from './components/VShimmerLine.vue'
 import VShimmerBlock from './components/VShimmerBlock.vue'
 
 export function install (Vue) {
   Vue.component('VShimmerRoot', VShimmerRoot)
-  Vue.component('VShimmerHeading', VShimmerHeading)
   Vue.component('VShimmerImage', VShimmerImage)
-  Vue.component('VShimmerMultiline', VShimmerMultiline)
+  Vue.component('VShimmerLine', VShimmerLine)
   Vue.component('VShimmerBlock', VShimmerBlock)
 }
 
 export {
   VShimmerRoot,
-  VShimmerHeading,
   VShimmerImage,
-  VShimmerMultiline,
+  VShimmerLine,
   VShimmerBlock
 }
 

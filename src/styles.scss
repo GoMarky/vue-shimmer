@@ -52,12 +52,7 @@ $vue-v-shimmer-spacing: 10px !default;
 }
 
 @mixin vue-v-shimmer-spacing {
-  [class^="vue-v-shimmer-"] + & {
-    margin-top: 2 * $vue-v-shimmer-spacing;
-  }
 }
-
-
 
 // Styles
 .vue-v-shimmer-heading {
@@ -68,7 +63,6 @@ $vue-v-shimmer-spacing: 10px !default;
     @include vue-v-shimmer;
     width: 2 * $vue-v-shimmer-line-height + 3 * $vue-v-shimmer-spacing;
     height: 2 * $vue-v-shimmer-line-height + 3 * $vue-v-shimmer-spacing;
-    margin-right: 1.5 * $vue-v-shimmer-spacing;
   }
 
   &__content {
@@ -80,7 +74,6 @@ $vue-v-shimmer-spacing: 10px !default;
 
   &__title {
     @include vue-v-shimmer;
-    width: 85%;
     margin-bottom: $vue-v-shimmer-spacing;
     background: $vue-v-shimmer-primary-color;
   }
@@ -96,31 +89,12 @@ $vue-v-shimmer-spacing: 10px !default;
 
   &__line {
     @include vue-v-shimmer;
-    width: 100%;
-    margin-bottom: $vue-v-shimmer-spacing;
-
-    &:nth-child(4n + 1) {
-      width: 80%;
-    }
-
-    &:nth-child(4n + 2) {
-      width: 100%;
-    }
-
-    &:nth-child(4n + 3) {
-      width: 70%;
-    }
-
-    &:nth-child(4n + 4) {
-      width: 85%;
-    }
   }
 }
 
 .vue-v-shimmer-img {
   @include vue-v-shimmer;
   @include vue-v-shimmer-spacing;
-  width: 100%;
   height: 120px;
 }
 

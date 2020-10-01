@@ -1,11 +1,24 @@
 <template>
-  <div :class="classObject">
+  <div
+    :class="classObject"
+    :style="{
+      display: 'flex',
+      flexDirection: direction,
+      justifyContent: 'space-between',
+      width: widthPx ? `${widthPx}px` : `${width}%`,
+      marginTop: `${offsetTop}px`,
+      height: heightPx ?  `${heightPx}px` : 'auto',
+    }"
+  >
     <slot />
   </div>
 </template>
 
 <script>
+import baseComponentPropsMixins from '../mixins/baseComponentPropsMixins'
+
 export default {
+  mixins: [baseComponentPropsMixins],
   name: 'v-shimmer',
   computed: {
     classObject () {
@@ -29,6 +42,10 @@ export default {
     animated: {
       type: Boolean,
       default: true,
+    },
+    direction: {
+      type: String,
+      default: 'column',
     },
   },
 }
