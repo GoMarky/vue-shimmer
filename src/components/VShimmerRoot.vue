@@ -7,6 +7,7 @@
       justifyContent: 'space-between',
       width: widthPx ? `${widthPx}px` : `${width}%`,
       marginTop: `${offsetTop}px`,
+      marginBottom: `${offsetBottom}px`,
       height: heightPx ?  `${heightPx}px` : 'auto',
     }"
   >

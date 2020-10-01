@@ -3,7 +3,8 @@
     :style="{
       width: widthPx ? `${widthPx}px` : `${width}%`,
       height: `${heightPx}px`,
-      marginTop: `${offsetTop}px`
+      marginTop: `${offsetTop}px`,
+      marginBottom: `${offsetBottom}px`
     }"
     :class="{
       'vue-v-shimmer-block': true,

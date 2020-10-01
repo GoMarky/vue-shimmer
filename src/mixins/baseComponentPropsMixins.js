@@ -12,6 +12,9 @@ export default {
     },
     offsetTop: {
       type: [Number, String],
+    },
+    offsetBottom: {
+      type: [Number, String],
     }
   }
 }
