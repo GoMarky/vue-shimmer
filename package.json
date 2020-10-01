@@ -1,7 +1,7 @@
 {
   "name": "@gomarky/vue-shimmer",
   "description": "Creating simple and powerful shimmers",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Andrew Slesarenko <swen295@gmail.com>",
   "keywords": [
     "vue",
@@ -12,6 +12,11 @@
     "placeholder",
     "progressive"
   ],
+  "publishConfig": {
+    "tag": "latest",
+    "access": "public"
+  },
+  "private": false,
   "license": "MIT",
   "main": "dist/vue-shimmer.common.js",
   "unpkg": "dist/vue-shimmer.browser.js",

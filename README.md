@@ -1,18 +1,11 @@
-# vue-content-placeholders
-
-![npm](https://img.shields.io/npm/v/vue-content-placeholders.svg)
-[![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
-
-> Vue addon for rendering fake content while data is fetching to provide better UX and lower bounce rate.
-
-![example](https://i.imgur.com/JQlFjsS.gif)
+# @gomarky/vue-shimmer
 
 ---
 
 ## :cd: Installation
 
-* via npm: `npm install vue-content-placeholders --save`
-* via yarn: `yarn add vue-content-placeholders`
+* via npm: `npm install @gomarky/vue-shimmer --save`
+* via yarn: `yarn add @gomarky/vue-shimmer`
 
 ## :rocket: Usage
 
@@ -20,7 +13,7 @@ Include plugin in your `main.js` file.
 
 ```javascript
 import Vue from 'vue'
-import VueContentPlaceholders from 'vue-content-placeholders'
+import VueContentPlaceholders from '@gomarky/vue-shimmer'
 
 Vue.use(VueContentPlaceholders)
 ```
@@ -36,16 +29,12 @@ Vue.use(VueContentPlaceholders)
 </content-placeholders>
 ```
 
-![rendered example](https://i.imgur.com/LWfqxUe.png)
-
 ```html
 <content-placeholders :rounded="true">
   <content-placeholders-img />
   <content-placeholders-heading />
 </content-placeholders>
 ```
-
-![rendered example](https://i.imgur.com/NBb6ZB7.png)
 
 ### Available components and properties
 
