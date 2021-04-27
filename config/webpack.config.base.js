@@ -1,5 +1,5 @@
 var webpack = require('webpack')
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 var outputFile = 'vue-shimmer'
 var config = require('../package.json')
@@ -9,25 +9,17 @@ module.exports = {
   module: {
     rules: [
       {
-        enforce: 'pre',
-        test: /\.(js|vue)$/,
-        loader: 'eslint-loader',
-        exclude: /node_modules/,
-      },
-      {
         test: /.js$/,
         use: 'babel-loader',
       },
       {
-        test: /\.vue$/,
-        loader: 'vue-loader',
-        options: {
-          loaders: {
-            css: ExtractTextPlugin.extract('css-loader'),
-            sass: ExtractTextPlugin.extract('css-loader!sass-loader'),
-            scss: ExtractTextPlugin.extract('css-loader!sass-loader'),
-          },
-        },
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'vue-style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
       },
     ],
   },
@@ -35,6 +27,8 @@ module.exports = {
     new webpack.DefinePlugin({
       'VERSION': JSON.stringify(config.version),
     }),
-    new ExtractTextPlugin(outputFile + '.css'),
+    new MiniCssExtractPlugin({
+      filename: outputFile + '.css',
+    }),
   ],
 }
