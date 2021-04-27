@@ -37,6 +37,16 @@ Vue.use(VueShimmer)
   * Boolean `centered` (default: false)
   > these properties define how all children components will act
 
+
+Also, you can add your own colors in project. Use for it CSS variable, like in an example below:
+
+```css
+:root {
+  --v-shimmer-primary-color: #cecece;
+  --v-shimmer-secondary-color: #ffffff;
+}
+```
+
 ---
 
 ## 🔓 License

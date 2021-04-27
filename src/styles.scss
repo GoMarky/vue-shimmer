@@ -3,6 +3,11 @@ $vue-v-shimmer-border-radius: 6px !default;
 $vue-v-shimmer-line-height: 15px !default;
 $vue-v-shimmer-spacing: 10px !default;
 
+:root {
+  --v-shimmer-primary-color: #cecece;
+  --v-shimmer-secondary-color: #ffffff;
+}
+
 // Animations
 @keyframes vueContentPlaceholdersAnimation {
   0% {
