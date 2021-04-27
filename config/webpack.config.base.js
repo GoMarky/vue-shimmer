@@ -1,7 +1,6 @@
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-
 const outputFile = 'vue-shimmer'
 const config = require('../package.json')
 
@@ -21,7 +20,6 @@ module.exports = {
         test: /\.(sa|sc|c)ss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          'vue-style-loader',
           'css-loader',
           'sass-loader',
         ],

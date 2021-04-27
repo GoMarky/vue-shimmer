@@ -1,10 +1,9 @@
-var webpack = require('webpack')
-var merge = require('webpack-merge')
-var base = require('./webpack.config.base')
-var path = require('path')
+const merge = require('webpack-merge')
+const base = require('./webpack.config.base')
+const path = require('path')
 
-var outputFile = 'vue-shimmer'
-var globalName = 'VueShimmer'
+const outputFile = 'vue-shimmer'
+const globalName = 'VueShimmer'
 
 module.exports = merge(base, {
   output: {
@@ -14,12 +13,7 @@ module.exports = merge(base, {
     libraryTarget: 'umd',
   },
   externals: {},
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: true,
-      },
-      mangle: false,
-    }),
-  ],
+  optimization: {
+    minimize: true,
+  },
 })
