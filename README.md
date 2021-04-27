@@ -13,9 +13,9 @@ Include plugin in your `main.js` file.
 
 ```javascript
 import Vue from 'vue'
-import VueContentPlaceholders from '@gomarky/vue-shimmer'
+import VueShimmer from '@gomarky/vue-shimmer'
 
-Vue.use(VueContentPlaceholders)
+Vue.use(VueShimmer)
 ```
 
 > ⚠️ A css file is included when importing the package. You may have to setup your bundler to embed the css in your page.
@@ -23,17 +23,10 @@ Vue.use(VueContentPlaceholders)
 ### Examples:
 
 ```html
-<content-placeholders>
-  <content-placeholders-heading :img="true" />
-  <content-placeholders-text :lines="3" />
-</content-placeholders>
-```
-
-```html
-<content-placeholders :rounded="true">
-  <content-placeholders-img />
-  <content-placeholders-heading />
-</content-placeholders>
+ <VShimmerRoot direction="row" width="100" heightPx="16">
+  <VShimmerLine width="85" />
+  <VShimmerBlock width="7" />
+</VShimmerRoot>
 ```
 
 ### Available components and properties
