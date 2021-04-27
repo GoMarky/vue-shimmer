@@ -4,10 +4,12 @@
     :style="{
       display: 'flex',
       flexDirection: direction,
-      justifyContent: 'space-between',
+      justifyContent: justifyContent,
       width: widthPx ? `${widthPx}px` : `${width}%`,
       marginTop: `${offsetTop}px`,
       marginBottom: `${offsetBottom}px`,
+      marginLeft: `${offsetLeft}px`,
+      marginRight: `${offsetRight}px`,
       height: heightPx ?  `${heightPx}px` : 'auto',
     }"
   >
@@ -48,6 +50,10 @@ export default {
       type: String,
       default: 'column',
     },
+    justifyContent: {
+      type: String,
+      default: 'space-between',
+    }
   },
 }
 </script>

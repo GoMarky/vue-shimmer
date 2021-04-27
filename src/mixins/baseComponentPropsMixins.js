@@ -16,5 +16,11 @@ export default {
     offsetBottom: {
       type: [Number, String],
     },
+    offsetLeft: {
+      type: [Number, String],
+    },
+    offsetRight: {
+      type: [Number, String],
+    },
   },
 }

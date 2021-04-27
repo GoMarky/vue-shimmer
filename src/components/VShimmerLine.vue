@@ -4,7 +4,9 @@
       width: widthPx ? `${widthPx}px` : `${width}%`,
       height: `${heightPx}px`,
       marginTop: `${offsetTop}px`,
-      marginBottom: `${offsetBottom}px`
+      marginBottom: `${offsetBottom}px`,
+      marginLeft: `${offsetLeft}px`,
+      marginRight: `${offsetRight}px`,
     }"
     :class="className">
   </div>
