@@ -1,7 +1,8 @@
-import { PluginFunction } from 'vue/types/umd';
+import { PluginFunction } from 'vue';
 
 export default {
   install() {}
 } as {
   install: PluginFunction<any>;
 };
+

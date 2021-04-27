@@ -2,14 +2,14 @@
   <main>
     <h1> Vue shimmer DEMO </h1>
     <section>
-      <VShimmerRoot animated>
-        <VShimmerRoot direction="row" width="100" heightPx="16">
-          <VShimmerLine width="85" />
-          <VShimmerBlock width="7" />
+      <VShimmerRoot animated rounded>
+        <VShimmerRoot rounded justifyContent="initial" direction="row" width="100" heightPx="12">
+          <VShimmerLine offset-right="16" heightPx="12" widthPx="42" />
+          <VShimmerBlock heightPx="12" widthPx="134" />
         </VShimmerRoot>
-        <VShimmerRoot offsetTop="30" direction="row" width="100" heightPx="20">
+        <VShimmerRoot rounded offsetTop="30" direction="row" width="100" heightPx="20">
           <VShimmerLine width="70" heightPx="20" />
-          <VShimmerRoot direction="row" width="25" heightPx="20">
+          <VShimmerRoot rounded direction="row" width="25" heightPx="20">
             <VShimmerBlock widthPx="12" heightPx="20" />
             <VShimmerBlock widthPx="12" heightPx="20" />
             <VShimmerBlock widthPx="12" heightPx="20" />
