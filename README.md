@@ -31,22 +31,11 @@ Vue.use(VueShimmer)
 
 ### Available components and properties
 
-* root `<content-placeholders>`
+* root `<VShimmerRoot>`
   * Boolean `animated` (default: true)
   * Boolean `rounded` (default: false) - border radius
   * Boolean `centered` (default: false)
   > these properties define how all children components will act
-
-
-* `<content-placeholders-heading />`
-  * Boolean `img` (default: false)
-
-
-* `<content-placeholders-text />`
-  * Number `lines` (default: 4)
-
-
-* `<content-placeholders-img />`
 
 ---
 
