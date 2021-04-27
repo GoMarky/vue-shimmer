@@ -5,6 +5,11 @@ $vue-v-shimmer-border-radius: 6px !default;
 $vue-v-shimmer-line-height: 15px !default;
 $vue-v-shimmer-spacing: 10px !default;
 
+:root {
+  --v-shimmer-primary-color: #ccc;
+  --v-shimmer-secondary-color: #eee;
+}
+
 // Animations
 @keyframes vueContentPlaceholdersAnimation {
   0% {
@@ -21,7 +26,7 @@ $vue-v-shimmer-spacing: 10px !default;
   position: relative;
   overflow: hidden;
   height: $vue-v-shimmer-line-height;
-  /*background: $vue-v-shimmer-secondary-color; */
+  background: var(--v-shimmer-primary-color);
 
  .vue-v-shimmer-is-rounded &  {
    border-radius: $vue-v-shimmer-border-radius;
@@ -40,19 +45,18 @@ $vue-v-shimmer-spacing: 10px !default;
    width: 100vw;
    max-width: 1000px;
    height: 100%;
-   /* background: linear-gradient(to right, transparent 0%, darken($vue-v-shimmer-secondary-color, 5%) 15%, transparent 30%); */
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-name: vueContentPlaceholdersAnimation;
-    animation-timing-function: linear;
+   background: linear-gradient(to right, transparent 0%, var(--v-shimmer-secondary-color) 15%, transparent 30%);
+   animation-duration: 1.5s;
+   animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+   animation-name: vueContentPlaceholdersAnimation;
+   animation-timing-function: linear;
   }
 }
 
 @mixin vue-v-shimmer-spacing {
 }
 
-// Styles
 .vue-v-shimmer-heading {
   @include vue-v-shimmer-spacing;
   display: flex;
@@ -73,7 +77,7 @@ $vue-v-shimmer-spacing: 10px !default;
   &__title {
     @include vue-v-shimmer;
     margin-bottom: $vue-v-shimmer-spacing;
-    /* background: $vue-v-shimmer-primary-color; */
+    background: var(--v-shimmer-primary-color);
   }
 
   &__subtitle {

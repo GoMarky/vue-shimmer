@@ -14,7 +14,6 @@
 </template>
 
 <script>
-
 import baseComponentPropsMixins from '../mixins/baseComponentPropsMixins'
 
 const VALID_BLOCK_SIZES = ['small']

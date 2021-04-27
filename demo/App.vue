@@ -2,7 +2,7 @@
   <main>
     <h1> Vue shimmer DEMO </h1>
     <section>
-      <VShimmerRoot>
+      <VShimmerRoot animated>
         <VShimmerRoot direction="row" width="100" heightPx="16">
           <VShimmerLine width="85" />
           <VShimmerBlock width="7" />
