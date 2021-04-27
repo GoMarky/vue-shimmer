@@ -1,14 +1,7 @@
 // Variables
-$vue-v-shimmer-primary-color: #ccc !default;
-$vue-v-shimmer-secondary-color: #eee !default;
 $vue-v-shimmer-border-radius: 6px !default;
 $vue-v-shimmer-line-height: 15px !default;
 $vue-v-shimmer-spacing: 10px !default;
-
-:root {
-  --v-shimmer-primary-color: #ccc;
-  --v-shimmer-secondary-color: #eee;
-}
 
 // Animations
 @keyframes vueContentPlaceholdersAnimation {
