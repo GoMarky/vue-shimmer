@@ -1,8 +1,9 @@
-var webpack = require('webpack')
+const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
-var outputFile = 'vue-shimmer'
-var config = require('../package.json')
+const outputFile = 'vue-shimmer'
+const config = require('../package.json')
 
 module.exports = {
   entry: './src/index.js',
@@ -11,6 +12,10 @@ module.exports = {
       {
         test: /.js$/,
         use: 'babel-loader',
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
       },
       {
         test: /\.(sa|sc|c)ss$/,
@@ -24,6 +29,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new VueLoaderPlugin(),
     new webpack.DefinePlugin({
       'VERSION': JSON.stringify(config.version),
     }),

@@ -1,6 +1,6 @@
-var merge = require('webpack-merge');
-var base = require('./webpack.config.base');
-var path = require('path');
+const merge = require('webpack-merge');
+const base = require('./webpack.config.base');
+const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -8,11 +8,12 @@ module.exports = merge(base, {
   entry: './demo/main.js',
   devtool: 'eval-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'build'),
+    contentBase: path.resolve(__dirname, '..', 'build'),
+    writeToDisk: true,
     port: 8080,
   },
   output: {
-    path: path.join(__dirname, 'build')
+    path: path.resolve(__dirname, '..', 'build')
   },
   plugins: [
     new HtmlWebpackPlugin({
